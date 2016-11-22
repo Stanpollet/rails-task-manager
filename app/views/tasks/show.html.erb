@@ -1,0 +1,10 @@
+<h1>Tasks#show</h1>
+<h1><%= @task.name %></h1>
+
+<p><%= @task.done %></p>
+
+<p><%= link_to "all the tasks", tasks_path %></p>
+
+<p><%= link_to "edit this task", edit_task_path(@task) %></p>
+
+<p><%= link_to "delete this task", task_path(@task), method: :delete %></p>
